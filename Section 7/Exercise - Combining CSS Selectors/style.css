@@ -1,0 +1,39 @@
+/* 1. Group */
+/* .class, #id, ... {} */
+h1, h2 {
+    color: blueviolet;
+}
+
+/* 2. Parent > child(direct descendant)  */
+.box > p {
+    color: firebrick;
+}
+
+/* This would also work
+.box > .done {
+} */
+
+
+/* 3. Ancestor descendant */
+.box .list {
+    color: blue;
+}
+
+/* This would also work
+.box li {
+} */
+
+/* 4. Chaining selectors */
+/* If chaining includes an element, it'll always go first */
+li.done {
+    color: seagreen;
+}
+
+/* 5. Combining multiple selectors */
+ul p.done {
+    font-size: 0.5rem;
+}
+
+/* This would also work
+ul > p.done {
+} */
